@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:id="@+id/img_item_photo"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img_item_photo"
+                    android:orientation="vertical"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    >
+                    <TextView
+                        style="@style/Text1"
+                        android:id="@+id/tv_item_name"
+                        android:text="Name"
+
+                        android:layout_marginBottom="8dp"/>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <TextView
+
+            android:text="Deskripsi"
+            android:id="@+id/content_detail"
+            style="@style/TextContent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="20dp"
+            android:lineSpacingMultiplier="1"
+            android:textColor="@color/black"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            >
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    style="@style/Textlain.field"
+                    android:text="@string/lokasi"/>
+                <TextView
+                    style="@style/Textlain.value"
+                    android:id="@+id/content_lokasi"
+                    android:text="Content Lokasi" />
+
+            </TableRow>
+
+
+        </TableLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WisataKu Kulon Progo</string>
+    <string name="wisata_name">Nama Tempat Wisata</string>
+    <string name="lokasi">Lokasi</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="with_cardview">with CardView</string>
+    <string name="grid">Grid</string>
+    <string name="list">List</string>
+    <string name="about_me">About Me</string>
+</resources>
